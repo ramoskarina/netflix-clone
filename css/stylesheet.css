@@ -1,10 +1,10 @@
-body{
+.index{
     background-color: #141414;
     text-align: center;
     font-family:'Raleway', sans-serif;
 }
 
-h1 {
+.titulo1 {
     color: #fefefe;
     font-size: 52px;
     font-weight: bold;
@@ -67,4 +67,146 @@ button {
 button:hover {
     color: white;
     border: 1px solid white;
+}
+
+/* AQUI COMEÇA A HOME */
+
+.browse {
+    background-color: #141414;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo1 img {
+    width: 100px;
+    margin-left: 60px;
+    margin-top: 20px;
+    max-width: 90px;
+}
+
+nav div {
+    display: inline-block;
+    color: white;
+}
+
+.nav1 li {
+    display: inline-block;
+    max-width: 150px;
+    margin-left: 15px;
+}
+
+.nav1-list {
+    margin-bottom: 50px;
+    /*arrumar a centralização. margin-height? */
+}
+
+.nav2 li {
+    display: inline-block;
+    text-align: right;
+}
+
+header {
+    background-image: url(./img/destaque3.webp);
+    background-color: #141414;
+    background-size: cover;
+    height: 690px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.logo-filme img {
+    margin-left: 60px;
+    width: 550px;
+    margin-top: 30px;
+}
+
+.top10 {
+    display: flex;
+    margin-top: 20px;
+    color: white;
+}
+
+.top10 div {
+    background-color: #e50914;
+    width: 30px;
+    height: 32px;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 60px;
+    padding: 3px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.top10-destaque {
+    font-size: 12px;
+    padding-top: 4px;
+}
+
+.top10 h1 {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 15px;
+    line-height: 40px;
+    /*adicionar efeito shadow*/
+}
+
+.sinopse-destaque {
+    color: white;
+    margin-left: 60px;
+    margin-top: 25px;
+    max-width: 550px;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.botoes {
+    display: inline-flex;
+    margin-left: 60px;
+    margin-top: 25px;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.botao1 {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    display: flex;
+    line-height: 25px;
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.botao1 img {
+    max-width: 30px;
+    max-height: 25px;
+    margin-left: 25px;
+}
+
+.botao2 {
+    background-color: rgba(80, 80, 80, 0.6);
+    color: white;
+    font-size: 18px;
+    display: flex;
+    line-height: 25px;
+    height: 50px;
+    width: 230px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.botao2 img {
+    max-width: 30px;
+    max-height: 25px;
+    margin-left: 25px;
 }
