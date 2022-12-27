@@ -81,6 +81,7 @@ button:hover {
     margin-left: 60px;
     margin-top: 20px;
     max-width: 90px;
+    float: left;
 }
 
 nav div {
@@ -92,16 +93,25 @@ nav div {
     display: inline-block;
     max-width: 150px;
     margin-left: 15px;
+    font-size: 15px;
 }
 
 .nav1-list {
-    margin-bottom: 50px;
-    /*arrumar a centralização. margin-height? */
+    margin-top: 20px;
+    margin-left: 15px;
 }
 
 .nav2 li {
-    display: inline-block;
-    text-align: right;
+    float:left;
+    font-size: 15px;
+    display:inline-block;
+    margin-left: 120px;
+    justify-content: space-between;
+    max-width: 50px;
+}
+
+.nav2 img {
+    max-width: 30px;
 }
 
 header {
