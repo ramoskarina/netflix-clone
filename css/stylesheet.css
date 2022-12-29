@@ -50,6 +50,11 @@
     cursor: pointer;
 }
 
+.individuo a {
+    text-decoration: none;
+    color: #7a7a7a;
+}
+
 button {
     color: #7a7a7a;
     font-size: 18px;
@@ -84,43 +89,65 @@ button:hover {
     float: left;
 }
 
-nav div {
-    display: inline-block;
+.navegacao {
+    display: flex;
+    width: 100%;
+}
+
+.navegacao div {
+    display: flex;
     color: white;
 }
 
 .nav1 li {
-    display: inline-block;
+    display: inline-flex;
     max-width: 150px;
     margin-left: 15px;
     font-size: 15px;
 }
 
 .nav1-list {
-    margin-top: 20px;
+    margin-top: 21px;
     margin-left: 15px;
 }
 
+.nav2 {
+    position: fixed;
+    right: 60px;
+    top: 15px;
+}
+
+.nav2 ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
 .nav2 li {
-    float:left;
     font-size: 15px;
-    display:inline-block;
-    margin-left: 120px;
-    justify-content: space-between;
-    max-width: 50px;
+    display: flex;
 }
 
 .nav2 img {
     max-width: 30px;
 }
 
+.triangulo {
+    border-color: #fff transparent transparent;
+    border-style: solid;
+    border-width: 5px 5px 0;
+    transition: transform 367ms cubic-bezier(.21,0,.07,1);
+    margin-left: 15px;
+    margin-top: 12px;
+}
+
 header {
-    background-image: url(./img/destaque3.webp);
+    background-image: url(./img/destaque5.webp);
     background-color: #141414;
     background-size: cover;
-    height: 690px;
+    height: 100vh;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
 .logo-filme img {
@@ -130,38 +157,23 @@ header {
 }
 
 .top10 {
-    display: flex;
     margin-top: 20px;
     color: white;
-}
-
-.top10 div {
-    background-color: #e50914;
-    width: 30px;
-    height: 32px;
-    border-radius: 4px;
-    color: white;
-    text-align: center;
-    font-weight: bold;
+    width: 600px;
+    display: flex;
     margin-left: 60px;
-    padding: 3px;
-    display: grid;
-    justify-content: center;
     align-items: center;
-}
-
-.top10-destaque {
-    font-size: 12px;
-    padding-top: 4px;
-}
-
-.top10 h1 {
-    color: white;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: bold;
+    /*adicionar shadow na fonte do parágrafo e título, aka .top10 p*/
+}
+
+.top10 p {
     margin-left: 15px;
-    line-height: 40px;
-    /*adicionar efeito shadow*/
+}
+
+.top10 svg {
+    max-width: 30px;
 }
 
 .sinopse-destaque {
@@ -206,17 +218,31 @@ header {
     color: white;
     font-size: 18px;
     display: flex;
-    line-height: 25px;
-    height: 50px;
     width: 230px;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    gap: -10px;
 }
 
-.botao2 img {
-    max-width: 30px;
-    max-height: 25px;
-    margin-left: 25px;
+.botao2 p {
+    background-color: rgba(80, 80, 80, 0);
+}
+
+.botao2 svg {
+    width: 60px;
+}
+
+.minha-lista {
+    color: white;
+}
+
+.minha-lista ul {
+    background-color: red;
+    display: inline-flex;
+}
+
+.minha-lista li {
+    background-color: orange;
 }
